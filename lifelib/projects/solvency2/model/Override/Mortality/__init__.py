@@ -28,7 +28,7 @@ def MortRateFactor(t):
             elif Risk == 'longev':
                 return 1 - Factor(Risk, Shock, Scope)
             else:
-                ValueError("invalid Risk: %s" % Risk)
+                raise ValueError("invalid Risk: %s" % Risk)
 
         else:
             return 1
